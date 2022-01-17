@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+
+    background-color: black;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+.qwe{
+    border-radius: 50%;
+    border: 10px solid red;
+}
+#preloader.hide-preloader {
+    display: none;
+}
+#preloader.hide-preloader {
+    animation: hidePreloader 10s;
+}
+
+#preloader.preloader-hidden {
+    display: none;
+}
+
+@keyframes hidePreloader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* header (который тут нафиг пока не нужен)
+=============================================================*/
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header_logo{
+        margin-bottom: 2px;
+}
+.nav_link{
+    margin-left: 45px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Raleway";
+    font-weight: 900;
+    transition: .4s linear;
+    margin-bottom: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: linear;;
+}
+.nav_link:hover {
+    margin-bottom: 3px;
+    border-bottom: 2px solid red;
+    transition: linear;
+    color: red;
+}
+.nav {
+    display: flex;
+    transition: .4s linear;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header_inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding: 30px 0;
+
+
+}
+.header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+/* Интро
+=============================================================*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 950px;
+    padding-top: 100px;
+
+    background: #31344e url("img/1/1.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__text{
+    display: flex;
+    text-align: center;
+}
+.text_block{
+    height: 400px;
+}
+.text1{
+    display: flex;
+    justify-content: space-around;
+    font-size: 65px;
+    color: white;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.text2{
+    display: flex;
+    justify-content: space-around;
+    font-size: 85px;
+    color: white;
+    padding-bottom: 40px;
+}
+/* Button
+===================*/
+.button_center{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn {
+    padding: 10px 10px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    justify-content: space-around;
+    display: flex;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .4s linear;
+}
+
+.btn--red:hover {
+    padding: 10px 50px;
+    border: 2px solid red;
+    transition: linear;
+    border-radius: 6px;
+    transition: .4s linear;
+}
+/*ВЫШЕ НИЧЕГО НЕ ТРОГАТЬ Я ПИСАЛ ЭТО В ПЬЯНОМ УГАРЕ (НЕТ)/
+/*ВЫШЕ НИЧЕГО НЕ ТРОГАТЬ Я ПИСАЛ ЭТО В ПЬЯНОМ УГАРЕ (НЕТ)/
+/*ВЫШЕ НИЧЕГО НЕ ТРОГАТЬ Я ПИСАЛ ЭТО В ПЬЯНОМ УГАРЕ (НЕТ)/
+
+
+
+/*3 картинки и текст/
+
+3 картинки и текст*/
+/* works- две картинки
+=============================================================*/
+.features{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.f_photo{
+    width: 33%;
+    border-radius: 7px;
+    
+}
